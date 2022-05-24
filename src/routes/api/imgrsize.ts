@@ -15,7 +15,7 @@ imgrsiz.get('/', (req: express.Request, res: express.Response) => {
 
   (async function fun() {
     try {
-      if (!isFinite(parseInt(w)) || !isFinite(parseInt(h))) {
+      if ( !isFinite(parseInt(w)) || !isFinite(parseInt(h))) {
         return res.status(400).send('the width or the height is not a number');
       }
       const widthh = parseInt(w),
